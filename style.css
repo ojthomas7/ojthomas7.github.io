@@ -195,39 +195,39 @@ footer {
 }
 
 .tile1:before {
-    background-image: url('../images/tile1.jpeg'); /* Background image for tile1 */
+    background-image: url('tile1.jpeg'); /* Background image for tile1 */
 }
 
 .tile2:before {
-    background-image: url('../images/tile2.jpeg'); /* Background image for tile2 */
+    background-image: url('tile2.jpeg'); /* Background image for tile2 */
 }
 
 .tile3:before {
-    background-image: url('../images/tile3.jpeg'); /* Background image for tile3 */
+    background-image: url('tile3.jpeg'); /* Background image for tile3 */
 }
 
 .tile4:before {
-    background-image: url('../images/tile4.jpeg'); /* Background image for tile4 */
+    background-image: url('tile4.jpeg'); /* Background image for tile4 */
 }
 
 .tile5:before {
-    background-image: url('../images/tile1.jpeg'); /* Background image for tile1 */
+    background-image: url('tile1.jpeg'); /* Background image for tile1 */
 }
 
 .tile6:before {
-    background-image: url('../images/tile1.jpeg'); /* Background image for tile2 */
+    background-image: url('tile1.jpeg'); /* Background image for tile2 */
 }
 
 .tile7:before {
-    background-image: url('../images/tile1.jpeg'); /* Background image for tile3 */
+    background-image: url('tile1.jpeg'); /* Background image for tile3 */
 }
 
 .tile8:before {
-    background-image: url('../images/tile1.jpeg'); /* Background image for tile4 */
+    background-image: url('tile1.jpeg'); /* Background image for tile4 */
 }
 
 .tile9:before {
-    background-image: url('../images/tile1.jpeg'); /* Background image for tile4 */
+    background-image: url('tile1.jpeg'); /* Background image for tile4 */
 }
 
 .tile1:hover:before, .tile2:hover:before, .tile3:hover:before, .tile4:hover:before, .tile5:hover:before, .tile6:hover:before, .tile7:hover:before, .tile8:hover:before, .tile9:hover:before {
