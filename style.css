@@ -455,3 +455,35 @@ li:hover {
 .vertical-menu li a:visited {
     color: #000;
 }
+
+.the-project {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in forwards;
+    position: relative;
+    background-color: #e9ebf0;
+    padding: 5px 10px;
+    color: #000;  /* Ensure text is visible */
+    text-align: left;
+    font-size: xx-large;
+}
+
+.the-project::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;  /* Increased thickness for visibility */
+    background-color: #000;  /* Changed to black for visibility */
+    animation: slideInUnderline 1.5s ease-in-out forwards 0.4s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInUnderline {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
