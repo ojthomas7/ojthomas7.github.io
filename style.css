@@ -475,7 +475,7 @@ li:hover {
     width: 0;
     height: 2px;  /* Increased thickness for visibility */
     background-color: #000;  /* Changed to black for visibility */
-    animation: slideInUnderline 1.5s ease-in-out forwards 0.4s;
+    animation: slideInUnderline 1.2s ease-in-out forwards 0.4s;
 }
 
 @keyframes fadeIn {
@@ -486,4 +486,23 @@ li:hover {
 @keyframes slideInUnderline {
     0% { width: 0; }
     100% { width: 100%; }
+}
+
+.horizontal-line {
+    align-items: center;
+    width: 0;  /* Start with 0 width */
+    max-width: 95%;  /* Maximum width */
+    height: 2.5px;
+    background-color: #000;
+    margin: 20px auto;
+    animation: slideInLine 1.2s ease-in-out forwards;
+}
+
+@keyframes slideInLine {
+    from {
+        width: 0;
+    }
+    to {
+        width: 95%;
+    }
 }
