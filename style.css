@@ -506,3 +506,72 @@ li:hover {
         width: 95%;
     }
 }
+
+/* General styling for unordered lists */
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Styling for list items */
+ul li {
+    font-family: 'Playfair Display', serif;
+    font-size: x-large;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in forwards;
+    transition: none; /* Remove any transition */
+    transform: none; /* Remove any transform */
+}
+
+/* Explicitly remove hover effects for general list items */
+ul li:hover {
+    transform: none;
+}
+
+/* Preserve the horizontal list styling */
+.horizontal-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Styling for the vertical menu */
+.vertical-menu {
+    width: 100%;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.vertical-menu ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.vertical-menu li {
+    display: list-item;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: x-large;
+    transition: transform 0.2s ease-in-out;
+    transform-origin: 50% 100%;
+    cursor: pointer;
+}
+
+/* Hover effect only for vertical menu items */
+.vertical-menu li:hover {
+    transform: translateY(-5px);
+}
+
+li {
+    text-align: left;
+}
