@@ -211,7 +211,7 @@ footer {
 }
 
 .tile5:before {
-    background-image: url('tile1.jpeg'); /* Background image for tile1 */
+    background-image: url('hypercube.jpeg'); /* Background image for tile1 */
 }
 
 .tile6:before {
@@ -219,7 +219,7 @@ footer {
 }
 
 .tile7:before {
-    background-image: url('tile1.jpeg'); /* Background image for tile3 */
+    background-image: url('tile3.jpeg'); /* Background image for tile3 */
 }
 
 .tile8:before {
