@@ -226,10 +226,6 @@ footer {
     background-image: url('tile1.jpeg'); /* Background image for tile4 */
 }
 
-.tile9:before {
-    background-image: url('tile1.jpeg'); /* Background image for tile4 */
-}
-
 .tile1:hover:before, .tile2:hover:before, .tile3:hover:before, .tile4:hover:before, .tile5:hover:before, .tile6:hover:before, .tile7:hover:before, .tile8:hover:before, .tile9:hover:before {
     opacity: 0.3; /* Change to desired opacity on hover */
 }
