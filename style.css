@@ -25,6 +25,24 @@
   }
   
 
+.horizontal-list a {
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+
+.horizontal-list a:hover {
+    transform: translateY(-5px);
+}
+
+.horizontal-list li {
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    padding-top: 20px;
+    margin-right: 20px;
+    animation: fadeIn 0.8s ease-in forwards;
+    font-size: x-large;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #e9ebf0;
