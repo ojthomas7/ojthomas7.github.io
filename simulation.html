@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        function goToHomePage() {
+            if (window.opener && !window.opener.closed) {
+                window.opener.location.href = 'index.html';
+            } else {
+                window.location.href = 'index.html';
+            }
+        }
+    </script>
+
+    <title>Simulating Astrophysical Convection</title>
+</head>
+<body>
+    <header>
+        <h1>Simulating Astrophysical Convection</h1>
+        <ul class="horizontal-list">
+            <a href="#" onclick="goToHomePage(); return false;"><li>Home</li></a>
+            <li class="separator">|</li>
+            <a href="Owen_Thomas_CV.pdf" target="_blank"><li>CV</li></a>
+            <li class="separator">|</li>
+            <a href="https://www.linkedin.com/in/owen-thomas-798082249/" target = "_blank"><li>LinkedIn</li></a>
+            <li class="separator">|</li>
+            <a href="https://github.com/ojthomas7" target="_blank"><li>GitHub</li></a>
+        </ul>
+    </header>
+    <main>
+        <section class="about-section">
+            <p class = "about_me_body">
+            </p>
+        </section>
+
+<div class="row">
+  <div class="column">
+    <h2 class = "the-project">Overview</h2>
+    <p>This project formed the second half of my dissertation module. Rayleigh-Benard convection is a form of natural convection that occurs when
+        a fluid is heated from below and cooled from above. This process is driven by buoyancy forces arising from temperature-induced density
+         variations in the fluid, and within this project I simulate these processes within Python. Specifically I utilise the DEDALUS framework,
+         used to solve complex PDEs. This included writing code to construct instances of convection, beginning with 2-D Rayleigh-Benard convection
+         and extending this into astrophysics by considering the convection within a rotating spherical shell. The physical relevance of this extension
+         being comparison between this shell and the convection zone in stars.
+    </p>
+  </div>
+    <div class="column">
+        <div class="image-container">
+            <div class="image-wrapper">
+                <img src="spherical_test.gif" alt="Image 1" class="side-by-side-image">
+            <div class="overlay">Spherical Shell Convection</div>
+            </div>
+            <div class="image-wrapper">
+                <img src="rn_high_turbulent.gif" alt="Image 2" class="side-by-side-image">
+            <div class="overlay">Turbulent 2-D Convection</div>
+            </div>
+        </div>
+<ul class = "vertical-menu">
+  <li><a href="simulations_of_convection.pdf" target = "_blank">The Final Poster</a></li>
+  <li><a href="https://github.com/ojthomas7/Simulations-of-Astro-Convection" target = "_blank">Simulations GitHub Repository</a></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        function goToHomePage() {
+            if (window.opener && !window.opener.closed) {
+                window.opener.location.href = 'index.html';
+            } else {
+                window.location.href = 'index.html';
+            }
+        }
+    </script>
+
+    <title>Research Internship</title>
+</head>
+<body>
+    <header>
+        <h1>Research Internship - Python for Hardware Automation</h1>
+        <ul class="horizontal-list">
+            <a href="#" onclick="goToHomePage(); return false;"><li>Home</li></a>
+            <li class="separator">|</li>
+            <a href="Owen_Thomas_CV.pdf" target="_blank"><li>CV</li></a>
+            <li class="separator">|</li>
+            <a href="https://www.linkedin.com/in/owen-thomas-798082249/" target = "_blank"><li>LinkedIn</li></a>
+            <li class="separator">|</li>
+            <a href="https://github.com/ojthomas7" target="_blank"><li>GitHub</li></a>
+        </ul>
+    </header>
+    <main>
+        <section class="about-section">
+            <p class = "about_me_body">
+            </p>
+        </section>
+
+<div class="row">
+  <div class="column">
+    <h2 class = "the-project">Overview</h2>
+    <p>I held the position of a research intern under Dr. Calum Williams with the physics department at the University of Exeter.
+         I worked primarily on hardware control, my objective being to create software that communicated with each individual 
+         piece of hardware in the lab. This was completed by working with each components SDK, eventually culminating in a 
+         singular python file with a GUI that allowed researchers to automate and conduct their experiments remotely. My work 
+         was well received and is currently being used in research exploring hyper-spectral imaging.
+    </p>
+  </div>
+    <div class="column">
+        <p>My final work was a single Python file that creates a 3-D array of spectral data (hypercube) by shining a laser on a given
+           object and performing a wavelength sweep, taking an image and a spectrometer reading for each iteration within the main loop.
+           The script then constructs a GUI for hypercube visuallisation.</p>
+</ul>
+<p>Please view the related github repository below to see examples of my code, with more detail as to how it works:</p>
+<ul class = "vertical-menu">
+    <li><a href="https://github.com/ojthomas7/Research-Internship" target = "_blank">Research Internship GitHub Repository</a></li>
+</ul>
+</body>
+</html>
