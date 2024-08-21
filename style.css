@@ -264,7 +264,7 @@ footer {
 h1 {
     font-family: 'Playfair Display', serif;
     font-weight: 800;
-    font-size: xxx-large;
+    font-size: xx-large;
     background-color: #c3d5d9;
     opacity: 0; /* Start fully transparent */
     animation: fadeIn 0.8s ease-in forwards; /* Apply the animation */
@@ -281,7 +281,7 @@ h2 {
 p {
     padding-top: 20px;
     font-family: 'Playfair Display', serif;
-    font-size: x-large;
+    font-size: large;
     font-weight: 300;
     background-color: #e9ebf0;
     opacity: 0; /* Start fully transparent */
@@ -443,13 +443,17 @@ li:hover {
     padding-left: 20px; /* Add left padding for bullets */
 }
 
+.vertical-menu a{
+    font-size: large;
+}
+
 .vertical-menu li {
     display: list-item; /* Changed to list-item to show bullets */
     font-family: 'Playfair Display', serif;
     padding-top: 20px;
     margin-bottom: 20px;
     animation: fadeIn 0.8s ease-in forwards;
-    font-size: x-large;
+    font-size: large;
     color: #000;
     transition: transform 0.2s ease-in-out;
     transform-origin: 50% 100%;
@@ -532,7 +536,7 @@ ul {
 /* Styling for list items */
 ul li {
     font-family: 'Playfair Display', serif;
-    font-size: x-large;
+    font-size: large;
     font-weight: 300;
     color: #000;
     margin-bottom: 10px;
