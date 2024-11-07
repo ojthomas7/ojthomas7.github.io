@@ -22,11 +22,11 @@
         }
     </script>
 
-    <title>Electron Orbital Classification</title>
+    <title>Improved Electron Orbital Classification</title>
 </head>
 <body>
     <header>
-        <h1>Electron Orbital Classification with TensorFlow</h1>
+        <h1>Improved Electron Orbital Classification</h1>
         <ul class="horizontal-list">
             <a href="#" onclick="goToHomePage(); return false;"><li>Home</li></a>
             <li class="separator">|</li>
@@ -47,21 +47,18 @@
   <div class="column">
     <h2 class = "the-project">Overview</h2>
     <p>
-        In this project I explore the crossover between quantum mechanics and machine learning, focusing on how ML may be utilised to classify
-        quantum states/ electron orbitals.
+        In this project I intended on improving the model created in the previous project with the same objective: to create a CNN that is able to accurately classify the priniciple quantum number.
     </p>
     <ul>
         <li>
-            Data collection and preprocessing: I wrote a script that generated 2-D cross sections of the probability density for various (n, l, m)
-            quantum states. These images were used as the training data for the model.
+            The CNN architecture was simplified in alignment with the demands of the task
         </li>
         <li>
-            Model building: I used the TensorFlow library to build the model using the VGG16 architecture with some custom dense layers on top. 
-            The model was then trained to classify the principle quantum number of the input images.
+            The training data was improved by generating images from n = 1 to n = 7, increasing the size of the training data set.
 
         </li>
         <li>
-            Deployment and Testing: After training, the model was roughly 60% accurate at classifying the principle quantum number of the given input image.
+            This time around the model could accurately classify the principle quantum number of an image of an orbital.
         </li>
     </ul>
   </div>
@@ -78,7 +75,7 @@
         </div>
 <p>Please view the related github repository below to see examples of my code:</p>
 <ul class = "vertical-menu">
-    <li><a href="https://github.com/ojthomas7/quantum-state-classification/tree/main" target = "_blank">Electron Orbital Classification GitHub Repository</a></li>
+    <li><a href="https://github.com/ojthomas7/improved-quantum-state-classification" target = "_blank">Improved Electron Orbital Classification GitHub Repository</a></li>
 </ul>
 </body>
 </html>

@@ -192,11 +192,11 @@ footer {
 }
 
 .tile8 {
-    animation-delay: 0s; /* Delay for tile4 */
+    animation-delay: 0.4s; /* Delay for tile4 */
 }
 
 .tile9 {
-    animation-delay: 1.4s; /* Delay for tile4 */
+    animation-delay: 0s; /* Delay for tile4 */
 }
 
 .tile1:before, .tile2:before, .tile3:before, .tile4:before, .tile5:before, .tile6:before, .tile7:before, .tile8:before, .tile9:before {
@@ -242,6 +242,10 @@ footer {
 
 .tile8:before {
     background-image: url('4_2_2.png'); /* Background image for tile4 */
+}
+
+.tile9:before {
+    background-image: url('5_1_0.png'); /* Background image for tile4 */
 }
 
 .tile1:hover:before, .tile2:hover:before, .tile3:hover:before, .tile4:hover:before, .tile5:hover:before, .tile6:hover:before, .tile7:hover:before, .tile8:hover:before, .tile9:hover:before {
