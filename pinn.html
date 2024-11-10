@@ -47,18 +47,19 @@
   <div class="column">
     <h2 class = "the-project">Overview</h2>
     <p>
-        In this project I intended on improving the model created in the previous project with the same objective: to create a CNN that is able to accurately classify the priniciple quantum number.
+        This project extends upon the two previous projects o the same theme. Previously, I have constructed a classical neural network to classify the principle quantum state
+        of images of the electron density about the hydrogen nucleus. I extended this work by incorporating a physics informed loss function in order to both improve the models 
+        accuracy and extend its classification abilities into the angular and magnetic quantum states l and m instead of simply the principle quantum number n.
     </p>
     <ul>
         <li>
-            The CNN architecture was simplified in alignment with the demands of the task
+            A physics-informed loss function was incorporated
         </li>
         <li>
-            The training data was improved by generating images from n = 1 to n = 7, increasing the size of the training data set.
-
+            The training data was improved by generating images from n = 1 to n = 9, increasing the size of the training data set.
         </li>
         <li>
-            This time around the model could accurately classify the principle quantum number of an image of an orbital.
+            The model was proven to be more accurate, most often correctly classifying l, the angular quantum number.
         </li>
     </ul>
   </div>
@@ -75,7 +76,7 @@
         </div>
 <p>Please view the related github repository below to see examples of my code:</p>
 <ul class = "vertical-menu">
-    <li><a href="https://github.com/ojthomas7/improved-quantum-state-classification" target = "_blank">Improved Electron Orbital Classification GitHub Repository</a></li>
+    <li><a href="https://github.com/ojthomas7/PINN-electron-orbital-classifier" target = "_blank">PINN GitHub Repository</a></li>
 </ul>
 </body>
 </html>
