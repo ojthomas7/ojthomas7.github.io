@@ -132,22 +132,22 @@ footer {
 }
 
 
-.tile1, .tile2 , .tile3 , .tile4 , .tile5 , .tile6 , .tile7 , .tile8, .tile9, .tile10, .tile11 {
+.tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9, .tile10, .tile11, .tile12 {
     width: calc(25% - 20px);
     height: 0;
-    padding-top: calc(25% - 20px); /* Adjusts to create aspect ratio for the tile */
+    padding-top: calc(25% - 20px);
     padding-left: 40px;
     position: relative;
     display: flex;
     margin: 10px;
-    justify-content: flex-start; /* Center content horizontally */
+    justify-content: flex-start;
     align-items: center;
-    background-color: white; /* Initial background color set to white */
-    opacity: 0; /* Start fully transparent */
-    animation: fadeIn 0.8s ease-in forwards; /* Apply the animation */
+    background-color: white;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in forwards;
 }
 
-.tile1_title, .tile2_title, .tile3_title, .tile4_title, .tile5_title, .tile6_title, .tile7_title, .tile8_title, .tile9_title, .tile10_title, .tile11_title {
+.tile1_title, .tile2_title, .tile3_title, .tile4_title, .tile5_title, .tile6_title, .tile7_title, .tile8_title, .tile9_title, .tile10_title, .tile11_title, .tile12_title {
     text-align: center;
     position: absolute;
     top: 50%;
@@ -157,7 +157,7 @@ footer {
     width: 100%;
     font-weight: 900;
     font-size: xx-large;
-    color: black; /* Initial color */
+    color: black;
     opacity: 0;
     transition: opacity 0.5s ease;
     text-decoration: none;
@@ -204,10 +204,14 @@ footer {
 }
 
 .tile_11 {
+    animation-delay: 0.4s;
+}
+
+.tile_12 {
     animation-delay: 0s;
 }
 
-.tile1:before, .tile2:before, .tile3:before, .tile4:before, .tile5:before, .tile6:before, .tile7:before, .tile8:before, .tile9:before, .tile10:before, .tile11:before {
+.tile1:before, .tile2:before, .tile3:before, .tile4:before, .tile5:before, .tile6:before, .tile7:before, .tile8:before, .tile9:before, .tile10:before, .tile11:before, .tile12:before {
     content: "";
     position: absolute;
     top: 0;
@@ -264,8 +268,12 @@ footer {
     background-image: url('Bloch_sphere.jpeg');
 }
 
-.tile1:hover:before, .tile2:hover:before, .tile3:hover:before, .tile4:hover:before, .tile5:hover:before, .tile6:hover:before, .tile7:hover:before, .tile8:hover:before, .tile9:hover:before, .tile10:hover:before, .tile11:hover:before {
-    opacity: 0.3;
+.tile12:before {
+    background-image: url('teleportation.jpeg'); /* Make sure to add your image */
+}
+
+.tile1:hover:before, .tile2:hover:before, .tile3:hover:before, .tile4:hover:before, .tile5:hover:before, .tile6:hover:before, .tile7:hover:before, .tile8:hover:before, .tile9:hover:before, .tile10:hover:before, .tile11:hover:before, .tile12:hover:before {
+    opacity: 0.2;
 }
 
 .tile a {
@@ -308,7 +316,7 @@ p {
     animation: fadeIn 0.8s ease-in forwards; /* Apply the animation */
 }
 
-.tile1:hover .tile1_title, .tile2:hover .tile2_title, .tile3:hover .tile3_title, .tile4:hover .tile4_title, .tile5:hover .tile5_title, .tile6:hover .tile6_title, .tile7:hover .tile7_title, .tile8:hover .tile8_title, .tile9:hover .tile9_title, .tile10:hover .tile10_title, .tile11:hover .tile11_title {
+.tile1:hover .tile1_title, .tile2:hover .tile2_title, .tile3:hover .tile3_title, .tile4:hover .tile4_title, .tile5:hover .tile5_title, .tile6:hover .tile6_title, .tile7:hover .tile7_title, .tile8:hover .tile8_title, .tile9:hover .tile9_title, .tile10:hover .tile10_title, .tile11:hover .tile11_title, .tile12:hover .tile12_title {
     opacity: 1;
 }
 
@@ -616,7 +624,7 @@ li {
 
 .single-image-container {
     position: relative;
-    width: 60%;
+    width: 70%;
     margin-bottom: 20px;
     overflow: hidden;
 }
@@ -636,6 +644,7 @@ li {
     right: 0;
     bottom: 0;
     background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
     color: black;
     display: flex;
     justify-content: center;
