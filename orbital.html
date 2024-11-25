@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        function goToHomePage() {
+            if (window.opener && !window.opener.closed) {
+                window.opener.location.href = 'index.html';
+            } else {
+                window.location.href = 'index.html';
+            }
+        }
+    </script>
+
+    <title>Electron Orbital Classification</title>
+</head>
+<body>
+    <header>
+        <h1>Electron Orbital Classification with TensorFlow</h1>
+        <ul class="horizontal-list">
+            <a href="#" onclick="goToHomePage(); return false;"><li>Home</li></a>
+            <li class="separator">|</li>
+            <a href="Owen_Thomas_CV.pdf" target="_blank"><li>CV</li></a>
+            <li class="separator">|</li>
+            <a href="https://www.linkedin.com/in/owen-thomas-798082249/" target = "_blank"><li>LinkedIn</li></a>
+            <li class="separator">|</li>
+            <a href="https://github.com/ojthomas7" target="_blank"><li>GitHub</li></a>
+        </ul>
+    </header>
+    <main>
+        <section class="about-section">
+            <p class = "about_me_body">
+            </p>
+        </section>
+
+<div class="row">
+  <div class="column">
+    <h2 class = "the-project">Overview</h2>
+    <p>
+        In this project I explore the crossover between quantum mechanics and machine learning, focusing on how ML may be utilised to classify
+        quantum states/ electron orbitals.
+    </p>
+    <ul>
+        <li>
+            Data collection and preprocessing: I wrote a script that generated 2-D cross sections of the probability density for various (n, l, m)
+            quantum states. These images were used as the training data for the model.
+        </li>
+        <li>
+            Model building: I used the TensorFlow library to build the model using the VGG16 architecture with some custom dense layers on top. 
+            The model was then trained to classify the principle quantum number of the input images.
+
+        </li>
+        <li>
+            Deployment and Testing: After training, the model was roughly 60% accurate at classifying the principle quantum number of the given input image.
+        </li>
+    </ul>
+  </div>
+    <div class="column">
+        <div class="image-container">
+            <div class="image-wrapper">
+                <img src="3_1_1.png" alt="Image 1" class="side-by-side-image">
+            <div class="overlay">Quantum state [3, 1, 1]</div>
+            </div>
+            <div class="image-wrapper">
+                <img src="5_1_0.png" alt="Image 2" class="side-by-side-image">
+            <div class="overlay">Quantum state [5, 1, 0]</div>
+            </div>
+        </div>
+<p>Please view the related github repository below to see examples of my code:</p>
+<ul class = "vertical-menu">
+    <li><a href="https://github.com/ojthomas7/quantum-state-classification/tree/main" target = "_blank">Electron Orbital Classification GitHub Repository</a></li>
+</ul>
+</body>
+</html>

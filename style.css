@@ -1,0 +1,681 @@
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.horizontal-line {
+    align-items: center;
+    width: 95%;
+    height: 2.5px;
+    background-color: #000;
+    margin: 20px auto;
+    animation: fadeIn 0.8s ease-in forwards;
+  }
+  
+
+.horizontal-list a {
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+
+.horizontal-list a:hover {
+    transform: translateY(-5px);
+}
+
+.horizontal-list li {
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    padding-top: 20px;
+    margin-right: 20px;
+    animation: fadeIn 0.8s ease-in forwards;
+    font-size: xx-large;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ebf0;
+}
+
+header {
+    background-color: #c3d5d9;
+    padding: 40px;
+    text-align: center;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    padding-top: 20px;
+    margin-right: 20px;
+    animation: fadeIn 0.8s ease-in forwards;
+    font-size: x-large;
+}
+
+ul {
+    text-align: center;
+}
+
+.about_me_body {
+    background-color: #e9ebf0;
+    text-align: center;
+}
+
+.horizontal-list a {
+    color: #000; /* Set the color to black (#000) */
+    text-decoration: none; /* Remove the underline */
+}
+
+footer {
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    bottom: 20px;
+    left: 40px;
+    width: 100%;
+    text-align: left;
+    padding-bottom: 10px;
+    padding-top: 40px;
+    animation: fadeIn 0.8s ease-in forwards;
+}
+  
+
+.project_title {
+    padding-left: 40px;
+    padding-top: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: xx-large;
+    background-color: #e9ebf0;
+    opacity: 0; /* Start fully transparent */
+    animation: fadeIn 0.8s ease-in forwards; /* Apply the animation */
+}
+
+.project_type {
+    padding-left: 40px;
+    padding-top: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+    font-size: xx-large;
+    background-color: #e9ebf0;
+    opacity: 0; /* Start fully transparent */
+    animation: fadeIn 0.8s ease-in forwards; /* Apply the animation */
+    text-align: left
+}
+
+.about {
+    padding-left: 40px;
+    padding-top: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+    font-size: xx-large;
+    background-color: #e9ebf0;
+    opacity: 0; /* Start fully transparent */
+    text-align: center;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9, .tile10, .tile11, .tile12, .tile13, .tile14 {
+    width: calc(25% - 20px);
+    height: 0;
+    padding-top: calc(25% - 20px);
+    padding-left: 40px;
+    position: relative;
+    display: flex;
+    margin: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in forwards;
+}
+
+.tile1_title, .tile2_title, .tile3_title, .tile4_title, .tile5_title, .tile6_title, .tile7_title, .tile8_title, .tile9_title, .tile10_title, .tile11_title, .tile12_title, .tile13_title, .tile14_title {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Playfair Display', serif;
+    width: 100%;
+    font-weight: 900;
+    font-size: xx-large;
+    color: black;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    text-decoration: none;
+}
+
+.tile1 {
+    animation-delay: 0s; /* Delay for tile1 */
+}
+
+.tile2 {
+    animation-delay: 0.4s; /* Delay for tile2 */
+}
+
+.tile3 {
+    animation-delay: 0.8s; /* Delay for tile3 */
+}
+
+.tile4 {
+    animation-delay: 1.2s; /* Delay for tile4 */
+}
+
+.tile5 {
+    animation-delay: 0.8s; /* Delay for tile1 */
+}
+
+.tile6 {
+    animation-delay: 0.4s; /* Delay for tile2 */
+}
+
+.tile7 {
+    animation-delay: 1.2s; /* Delay for tile3 */
+}
+
+.tile8 {
+    animation-delay: 0.8s; /* Delay for tile4 */
+}
+
+.tile9 {
+    animation-delay: 0.4s; /* Delay for tile4 */
+}
+
+.tile10 {
+    animation-delay: 0s; /* Delay for tile4 */
+}
+
+.tile11 {
+    animation-delay: 1.2s;
+}
+
+.tile12 {
+    animation-delay: 0.8s;
+}
+
+.tile13 {
+    animation-delay: 0.4s;
+}
+
+.tile14 {
+    animation-delay: 0s;
+}
+
+.tile1:before, .tile2:before, .tile3:before, .tile4:before, .tile5:before, .tile6:before, .tile7:before, .tile8:before, .tile9:before, .tile10:before, .tile11:before, .tile12:before, .tile13:before, .tile14:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.tile1:before {
+    background-image: url('tile1.jpeg'); /* Background image for tile1 */
+}
+
+.tile2:before {
+    background-image: url('tile2.jpeg'); /* Background image for tile2 */
+}
+
+.tile3:before {
+    background-image: url('tile3.jpeg'); /* Background image for tile3 */
+}
+
+.tile4:before {
+    background-image: url('tile4.jpeg'); /* Background image for tile4 */
+}
+
+.tile5:before {
+    background-image: url('hypercube.jpeg'); /* Background image for tile1 */
+}
+
+.tile6:before {
+    background-image: url('pltr.jpeg'); /* Background image for tile2 */
+}
+
+.tile7:before {
+    background-image: url('tile3.jpeg'); /* Background image for tile3 */
+}
+
+.tile8:before {
+    background-image: url('4_2_2.png'); /* Background image for tile4 */
+}
+
+.tile9:before {
+    background-image: url('5_1_0.png'); /* Background image for tile4 */
+}
+
+.tile10:before {
+    background-image: url('5_4_0.png'); /* Background image for tile4 */
+}
+
+.tile11:before {
+    background-image: url('Bloch_sphere.jpeg');
+}
+
+.tile12:before {
+    background-image: url('teleportation.jpeg'); /* Make sure to add your image */
+}
+
+.tile13:before {
+    background-image: url('deutch.jpeg'); /* Make sure to add your image */
+}
+
+.tile14:before {
+    background-image: url('grover.jpeg'); /* Make sure to add your image */
+}
+
+.tile1:hover:before, .tile2:hover:before, .tile3:hover:before, .tile4:hover:before, .tile5:hover:before, .tile6:hover:before, .tile7:hover:before, .tile8:hover:before, .tile9:hover:before, .tile10:hover:before, .tile11:hover:before, .tile12:hover:before, .tile13:hover:before, .tile14:hover:before {
+    opacity: 0.1;
+}
+
+.tile a {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #333; /* Link text color */
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: xxx-large;
+    background-color: #c3d5d9;
+    opacity: 0; /* Start fully transparent */
+    animation: fadeIn 0.8s ease-in forwards; /* Apply the animation */
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    background-color: white; /* Initial background color set to white */
+    opacity: 0; /* Start fully transparent */
+    animation: fadeIn 0.8s ease-in forwards; /* Apply the animation */
+}
+
+p {
+    padding-top: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: x-large;
+    font-weight: 300;
+    background-color: #e9ebf0;
+    opacity: 0; /* Start fully transparent */
+    animation: fadeIn 0.8s ease-in forwards; /* Apply the animation */
+}
+
+.tile1:hover .tile1_title, .tile2:hover .tile2_title, .tile3:hover .tile3_title, .tile4:hover .tile4_title, .tile5:hover .tile5_title, .tile6:hover .tile6_title, .tile7:hover .tile7_title, .tile8:hover .tile8_title, .tile9:hover .tile9_title, .tile10:hover .tile10_title, .tile11:hover .tile11_title, .tile12:hover .tile12_title, .tile13:hover .tile13_title, .tile14:hover .tile14_title {
+    opacity: 1;
+}
+
+/* Hide the actual checkbox inputs */
+.toggle-checkbox {
+    display: none;
+}
+
+/* Hide project tiles by default */
+.content {
+    display: none;
+    flex-wrap: wrap; /* This allows the tiles to wrap to the next line if the container isn't wide enough */
+    justify-content: flex-start; /* This distributes space around each item for even spacing */
+    align-items: stretch;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+}
+
+/* Show project tiles when the corresponding checkbox is checked */
+.toggle-checkbox:checked + label + .content {
+    display: flex;
+}
+
+/* Optional: Style the labels to look more clickable */
+.project_type {
+    cursor: pointer;
+    display: block; /* Make the label take up the full width for easier clicking */
+    /* Any additional styling you want for the labels */
+    transition: transform 0.2s ease-in-out; /* Update the transition property */
+    transform-origin: 50% 100%; /* Set the transform origin to the bottom center */
+}
+
+.project_type:hover {
+    transform: translateY(-5px); /* Translate the element upwards by 5 pixels */
+}
+
+li {
+    transition: transform 0.2s ease-in-out; /* Update the transition property */
+    transform-origin: 50% 100%; /* Set the transform origin to the bottom center */
+}
+
+li:hover {
+    transform: translateY(-5px);
+}
+
+.about_me_body {
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: left;
+}
+
+  .row {
+    display: flex;
+    position: relative;
+  }
+  
+  .column {
+    flex: 50%;
+    padding: 40px;
+    height: 300px; /* As you noted, this should be removed if not needed for demonstration */
+    background-color: #e9ebf0;
+  }
+  
+  /* Add this new rule for the dividing line */
+  .row::after {
+    content: '';
+    position: absolute;
+    top: 30%; /* Adjust to change the starting point of the line */
+    left: 50%;
+    height: 90%; /* Adjust to change the length of the line */
+    width: 2px; /* Adjust to change the width of the line */
+    background-color: #e9ebf0; /* Change to your preferred color */
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .image-wrapper {
+    position: relative;
+    width: 48%;
+    padding-top: 48%; /* This creates a 1:1 aspect ratio */
+    overflow: hidden;
+  }
+  
+  .side-by-side-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in forwards;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7); /* Changed to white with 70% opacity */
+    color: black; /* Changed text color to black for better visibility on white */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .image-wrapper:hover .side-by-side-image {
+    opacity: 0.3; /* Reduced opacity of the image on hover */
+  }
+  
+  .image-wrapper:hover .overlay {
+    opacity: 1;
+  }
+  
+  .details {
+    font-family: 'Playfair Display', serif;
+    font-size: x-large;
+    font-weight: 300;
+    color: black;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in forwards;
+}
+
+.details:hover {
+    text-decoration: underline;
+}
+
+.vertical-menu {
+    width: 100%;
+    text-align: left; /* Changed to left for better bullet alignment */
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.vertical-menu ul {
+    list-style-type: disc;
+    padding-left: 20px; /* Add left padding for bullets */
+}
+
+.vertical-menu a{
+    font-size: x-large;
+}
+
+.vertical-menu li {
+    display: list-item; /* Changed to list-item to show bullets */
+    font-family: 'Playfair Display', serif;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    animation: fadeIn 0.8s ease-in forwards;
+    font-size: large;
+    color: #000;
+    transition: transform 0.2s ease-in-out;
+    transform-origin: 50% 100%;
+    cursor: pointer;
+    cursor: pointer;
+}
+
+.vertical-menu li:hover {
+    transform: translateY(-5px);
+}
+
+.vertical-menu li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.vertical-menu li a:visited {
+    color: #000;
+}
+
+.the-project {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in forwards;
+    position: relative;
+    background-color: #e9ebf0;
+    padding: 5px 10px;
+    color: #000;  /* Ensure text is visible */
+    text-align: left;
+    font-size: xx-large;
+}
+
+.the-project::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;  /* Increased thickness for visibility */
+    background-color: #000;  /* Changed to black for visibility */
+    animation: slideInUnderline 1.2s ease-in-out forwards 0.4s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInUnderline {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+.horizontal-line {
+    align-items: center;
+    width: 0;  /* Start with 0 width */
+    max-width: 95%;  /* Maximum width */
+    height: 2.5px;
+    background-color: #000;
+    margin: 20px auto;
+    animation: slideInLine 1.2s ease-in-out forwards;
+}
+
+@keyframes slideInLine {
+    from {
+        width: 0;
+    }
+    to {
+        width: 95%;
+    }
+}
+
+/* General styling for unordered lists */
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Styling for list items */
+ul li {
+    font-family: 'Playfair Display', serif;
+    font-size: x-large;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in forwards;
+    transition: none; /* Remove any transition */
+    transform: none; /* Remove any transform */
+}
+
+/* Explicitly remove hover effects for general list items */
+ul li:hover {
+    transform: none;
+}
+
+/* Preserve the horizontal list styling */
+.horizontal-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Styling for the vertical menu */
+.vertical-menu {
+    width: 100%;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.vertical-menu ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.vertical-menu li {
+    display: list-item;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: x-large;
+    transition: transform 0.2s ease-in-out;
+    transform-origin: 50% 100%;
+    cursor: pointer;
+}
+
+/* Hover effect only for vertical menu items */
+.vertical-menu li:hover {
+    transform: translateY(-5px);
+}
+
+li {
+    text-align: left;
+}
+
+.single-image-container {
+    position: relative;
+    width: 70%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.single-image {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in forwards;
+    transition: opacity 0.5s ease;
+}
+
+.single-image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+.single-image-container:hover .single-image {
+    opacity: 0.1;
+}
+
+.single-image-container:hover .overlay {
+    opacity: 1;
+}

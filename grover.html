@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        function goToHomePage() {
+            if (window.opener && !window.opener.closed) {
+                window.opener.location.href = 'index.html';
+            } else {
+                window.location.href = 'index.html';
+            }
+        }
+    </script>
+
+    <title>Grover's Algorithm</title>
+</head>
+<body>
+    <header>
+        <h1>Grover's Algorithm</h1>
+        <ul class="horizontal-list">
+            <a href="#" onclick="goToHomePage(); return false;"><li>Home</li></a>
+            <li class="separator">|</li>
+            <a href="Owen_Thomas_CV.pdf" target="_blank"><li>CV</li></a>
+            <li class="separator">|</li>
+            <a href="https://www.linkedin.com/in/owen-thomas-798082249/" target = "_blank"><li>LinkedIn</li></a>
+            <li class="separator">|</li>
+            <a href="https://github.com/ojthomas7" target="_blank"><li>GitHub</li></a>
+        </ul>
+    </header>
+    <main>
+        <section class="about-section">
+            <p class = "about_me_body">
+            </p>
+        </section>
+
+<div class="row">
+  <div class="column">
+    <h2 class = "the-project">Overview</h2>
+    <p>
+        Suppose we want to search through a set of data, and want to locate the position of a particular value. On a classical computer, if there are 
+N
+ values, then it would require 
+O(N) operations to find the index of the value we are searcing for. Using a quantum algorithm known as Grovers algorithm we can speed this up, requiring O(sqrt(N))
+operations.
+
+    </p>
+  </div>
+  <div class="column">
+    <ul>
+        <li>
+            We begin by initialising a circuit with 3 qubits (specific to this example)
+        </li>
+        <li>
+            We implement an oracle which produces a phase-flip if the target state is detected, marking our target state
+        </li>
+        <li>
+            The state then passes through a diffusion operator which produces a phase inversion about the mean, amplifying the marked target state
+        </li><li>
+            We then measure our states, finding our target state to be measured the most often
+        </li>
+    </ul>
+<p>Please read about this circuit in more detail below.</p>
+<ul class = "vertical-menu">
+    <li><a href="https://github.com/ojthomas7/grovers-algorithm" target = "_blank">Grover's Algorithm GitHub Repository</a></li>
+</ul>
+</body>
+</html>

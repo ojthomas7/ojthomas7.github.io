@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        function goToHomePage() {
+            if (window.opener && !window.opener.closed) {
+                window.opener.location.href = 'index.html';
+            } else {
+                window.location.href = 'index.html';
+            }
+        }
+    </script>
+
+    <title>Background Oriented Schlieren Analysis</title>
+</head>
+<body>
+    <header>
+        <h1>Background Oriented Schlieren Analysis</h1>
+        <ul class="horizontal-list">
+            <a href="#" onclick="goToHomePage(); return false;"><li>Home</li></a>
+            <li class="separator">|</li>
+            <a href="Owen_Thomas_CV.pdf" target="_blank"><li>CV</li></a>
+            <li class="separator">|</li>
+            <a href="https://www.linkedin.com/in/owen-thomas-798082249/" target = "_blank"><li>LinkedIn</li></a>
+            <li class="separator">|</li>
+            <a href="https://github.com/ojthomas7" target="_blank"><li>GitHub</li></a>
+        </ul>
+    </header>
+    <main>
+        <section class="about-section">
+            <p class = "about_me_body">
+            </p>
+        </section>
+
+<div class="row">
+  <div class="column">
+    <h2 class = "the-project">Overview</h2>
+    <p>This project formed the first half of my final year dissertation module. Schlieren imaging is a method of visualising fluctuations in the density of a transparent medium, 
+        used within engineering for investigating shockwave interactions and aerodynamic boundary layers. A classical schlieren setup requires a controlled environment and heavy,
+        expensive equipment. In my investigation I decided to investigate background oriented schlieren (BOS), a schlieren method that relies only on software. I developed my own
+        BOS setup within python using the computer vision module OpenCV. To the right is an example of my code in action, visualising the shockwaves created 
+        by super-sonic jets flying in formation.
+    </p>
+  </div>
+    <div class="column">
+        <div class="image-container">
+            <div class="image-wrapper">
+                <img src="BOS_test_input_1.gif" alt="Image 1" class="side-by-side-image">
+            <div class="overlay">Input</div>
+            </div>
+            <div class="image-wrapper">
+                <img src="test_1_BOS_success_2.gif" alt="Image 2" class="side-by-side-image">
+            <div class="overlay">Output</div>
+            </div>
+        </div>
+<ul class = "vertical-menu">
+  <li><a href="Schlieren_Imaging_Owen_Thomas.pdf" target = "_blank">The Full Paper</a></li>
+  <li><a href="https://github.com/ojthomas7/BOS-analysis" target = "_blank">BOS GitHub Repository</a></li>
+</ul>
+</body>
+</html>
